@@ -1,0 +1,63 @@
+[DEBUG] [2017-04-24 13:38:55][org.apache.shiro.spring.web.ShiroFilterFactoryBean]Creating Shiro Filter instance.
+[TRACE] [2017-04-24 13:38:55][org.apache.shiro.web.filter.authc.FormAuthenticationFilter]Adding login url to applied paths.
+[TRACE] [2017-04-24 13:38:55][org.apache.shiro.web.filter.authc.FormAuthenticationFilter]Adding login url to applied paths.
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.web.servlet.OncePerRequestFilter]Filter 'shiroFilter' not yet executed.  Executing now.
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.mgt.DefaultSecurityManager]Context already contains a SecurityManager instance.  Returning.
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.mgt.DefaultSecurityManager]No identity (PrincipalCollection) found in the context.  Looking for a remembered identity.
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.web.servlet.SimpleCookie]No 'rememberMe' cookie value
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.mgt.DefaultSecurityManager]No remembered identity found.  Returning original context.
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:38:56][org.apache.shiro.web.servlet.AbstractShiroFilter]No FilterChain configured for the current request.  Using the default.
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.web.servlet.OncePerRequestFilter]Filter 'shiroFilter' not yet executed.  Executing now.
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.mgt.DefaultSecurityManager]Context already contains a SecurityManager instance.  Returning.
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.mgt.DefaultSecurityManager]No identity (PrincipalCollection) found in the context.  Looking for a remembered identity.
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.web.servlet.SimpleCookie]No 'rememberMe' cookie value
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.mgt.DefaultSecurityManager]No remembered identity found.  Returning original context.
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:01][org.apache.shiro.web.servlet.AbstractShiroFilter]No FilterChain configured for the current request.  Using the default.
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.web.servlet.OncePerRequestFilter]Filter 'shiroFilter' not yet executed.  Executing now.
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.mgt.DefaultSecurityManager]Context already contains a SecurityManager instance.  Returning.
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.mgt.DefaultSecurityManager]No identity (PrincipalCollection) found in the context.  Looking for a remembered identity.
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.web.servlet.SimpleCookie]No 'rememberMe' cookie value
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.mgt.DefaultSecurityManager]No remembered identity found.  Returning original context.
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:39:18][org.apache.shiro.web.servlet.AbstractShiroFilter]No FilterChain configured for the current request.  Using the default.
+[TRACE] [2017-04-24 13:39:20][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[DEBUG] [2017-04-24 13:46:05][org.apache.shiro.spring.web.ShiroFilterFactoryBean]Creating Shiro Filter instance.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.web.filter.authc.FormAuthenticationFilter]Adding login url to applied paths.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.web.filter.authc.FormAuthenticationFilter]Adding login url to applied paths.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.web.servlet.OncePerRequestFilter]Filter 'shiroFilter' not yet executed.  Executing now.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.mgt.DefaultSecurityManager]Context already contains a SecurityManager instance.  Returning.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.mgt.DefaultSecurityManager]No identity (PrincipalCollection) found in the context.  Looking for a remembered identity.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.web.servlet.SimpleCookie]No 'rememberMe' cookie value
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.mgt.DefaultSecurityManager]No remembered identity found.  Returning original context.
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = true; session has id = false
+[TRACE] [2017-04-24 13:46:05][org.apache.shiro.web.servlet.AbstractShiroFilter]No FilterChain configured for the current request.  Using the default.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.web.servlet.OncePerRequestFilter]Filter 'shiroFilter' not yet executed.  Executing now.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.mgt.DefaultSecurityManager]Context already contains a SecurityManager instance.  Returning.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.mgt.DefaultSecurityManager]No identity (PrincipalCollection) found in the context.  Looking for a remembered identity.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.web.servlet.SimpleCookie]No 'rememberMe' cookie value
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.mgt.DefaultSecurityManager]No remembered identity found.  Returning original context.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.web.servlet.AbstractShiroFilter]No FilterChain configured for the current request.  Using the default.
+[TRACE] [2017-04-24 13:46:10][org.apache.shiro.subject.support.DelegatingSubject]attempting to get session; create = false; session is null = false; session has id = true

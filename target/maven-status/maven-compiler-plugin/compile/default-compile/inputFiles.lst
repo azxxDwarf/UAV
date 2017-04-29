@@ -1,0 +1,15 @@
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\service\impl\LoginServiceImpl.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\util\AppUtil.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\dao\LoginDao.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\entity\User.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\controller\BaseController.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\controller\LoginRedirect.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\shiro\ShiroRealm.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\util\PageData.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\dao\impl\LoginDaoImpl.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\util\Const.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\controller\LoginAction.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\controller\UserController.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\service\LoginService.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\db\DBAccess.java
+D:\new_eclps_wksps_more\NewMavenDemo\src\main\java\com\springdemo\shiro\LoginHandlerInterceptor.java

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd 
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+          http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- 配置扫描的包 -->
+	<context:component-scan base-package="com.springdemo.controller" />
+
+	<!-- 视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+	<!-- 告诉spring-mvc启动注解驱动 -->
+	<mvc:annotation-driven />
+	<!-- 提供静态资源的默认处理器 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 静态资源的访问 Restful -->
+	<!-- 下面代表 1、location: webapp目录下static包下所有文件 2、mapping: 以/static开头的所有请求路径 
+		DispatcherServlet不会拦截/static开头的所有请求路径，当静态资源交给Servlet处理 -->
+	<!-- <mvc:resources location="/static/" mapping="/static/**" /> -->
+	<mvc:resources location="/config/" mapping="/config/**" />
+	<mvc:resources location="/mapper/" mapping="/mapper/**" />
+
+	<!-- json视图转换 -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<!-- 设置返回字符串编码，防止@ResponseBody乱码 -->
+				<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/html;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+				<bean id="mappingJacksonHttpMessageConverter"
+					class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>application/json;charset=UTF-8</value>
+						</list>
+					</property>
+					<!-- 这个com.的包从哪儿来？ -->
+					<!-- <property name="objectMapper">
+						<bean class="com.fasterxml.jackson.databind.ObjectMapper">
+							<property name="dataFormat">
+								<bean class="java.text.SimpleDateFormat">
+									<constructor-arg index="0" type="java.lang.String" value="yyyy-MM-dd HH:mm:ss"/>
+								</bean>
+							</property>
+						</bean>
+					</property> -->
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 访问拦截 -->
+	<!-- shiro 相关的配置 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**/**" />
+			<bean class="com.springdemo.shiro.LoginHandlerInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+</beans>
