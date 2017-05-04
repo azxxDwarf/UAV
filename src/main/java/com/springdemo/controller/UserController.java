@@ -62,8 +62,9 @@ public class UserController extends BaseController {
 	@RequestMapping(value = "/hasU.do")
 	@ResponseBody
 	public Object hasU() {
-		Map<String,String> map = new HashMap<String,String>();
+		Map<String, String> map = new HashMap<String, String>();
 		String errInfo = "success";
+
 		PageData pd = this.getPageData();
 		if (loginService.findByUsername(pd) != null) {
 			System.out.println("pd is not null, username exists");
@@ -73,6 +74,7 @@ public class UserController extends BaseController {
 		}
 		
 		map.put("result", errInfo);
+		
 		return AppUtil.returnObject(pd, map);
 	}
 	

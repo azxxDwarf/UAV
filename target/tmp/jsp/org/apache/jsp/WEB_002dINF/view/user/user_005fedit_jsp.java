@@ -77,6 +77,8 @@ public final class user_005fedit_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\t\t} else {\r\n");
       out.write("\t\t\talert(\"ID is not null\");\r\n");
       out.write("\t\t} */\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t\t\r\n");
       out.write("\t\thasUser();\r\n");
       out.write("\t}\r\n");
       out.write("\t\r\n");

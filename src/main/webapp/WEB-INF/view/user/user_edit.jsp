@@ -34,6 +34,8 @@
 		} else {
 			alert("ID is not null");
 		} */
+		
+		
 		hasUser();
 	}
 	

@@ -9,6 +9,7 @@ import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
 
 public class PageData extends HashMap<String, String> implements Map<String, String> {
+	
 	private static final long serialVersionUID = 1L;
 	
 	// <key, json´®>
@@ -72,7 +73,6 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		return (String)get(key);
 	}
 	
-	@Override
 	public String put(String key, String value) {
 		return map.put(key, value);
 	}
