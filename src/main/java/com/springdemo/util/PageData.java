@@ -8,19 +8,19 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class PageData extends HashMap<String, String> implements Map<String, String> {
+public class PageData extends HashMap<Object, Object> implements Map<Object, Object> {
 	
 	private static final long serialVersionUID = 1L;
 	
 	// <key, json串>
-	Map<String, String> map = null;
+	Map<Object, Object> map = null;
 	HttpServletRequest request;
 	
 	/**
 	 * 无参构造
 	 */
 	public PageData() {
-		map = new HashMap<String, String>();
+		map = new HashMap<Object, Object>();
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		Map<String, String[]> properties = request.getParameterMap();
 		
 		// 要返回的map，<key, json串>
-		Map<String, String> retMap = new HashMap<String, String>();
+		Map<Object, Object> retMap = new HashMap<Object, Object>();
 		
 		// 遍历此map
 		Iterator<Map.Entry<String, String[]>> entries = properties.entrySet().iterator();
@@ -65,7 +65,8 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		map = retMap;
 	}
 	
-	public String get(String key) {
+	@Override
+	public Object get(Object key) {
 		return map.get(key);
 	}
 	
@@ -73,11 +74,11 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		return (String)get(key);
 	}
 	
-	public String put(String key, String value) {
+	public Object put(String key, String value) {
 		return map.put(key, value);
 	}
 	
-	public String remove(String key) {
+	public Object remove(Object key) {
 		return map.remove(key);
 	}
 
@@ -93,7 +94,7 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		return map.containsValue(value);
 	}
 
-	public Set<java.util.Map.Entry<String, String>> entrySet() {
+	public Set<java.util.Map.Entry<Object, Object>> entrySet() {
 		return map.entrySet();
 	}
 
@@ -101,7 +102,7 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		return map.isEmpty();
 	}
 
-	public Set<String> keySet() {
+	public Set<Object> keySet() {
 		return map.keySet();
 	}
 
@@ -109,7 +110,7 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 		return map.size();
 	}
 
-	public Collection<String> values() {
+	public Collection<Object> values() {
 		return map.values();
 	}
 	
@@ -118,14 +119,14 @@ public class PageData extends HashMap<String, String> implements Map<String, Str
 			System.out.println("The pd is null!");
 			return;
 		}
-		Iterator<java.util.Map.Entry<String, String>> entries = map.entrySet().iterator();
-		java.util.Map.Entry<String, String> entry = null;
+		Iterator<java.util.Map.Entry<Object, Object>> entries = map.entrySet().iterator();
+		java.util.Map.Entry<Object, Object> entry = null;
 		String key = null;
 		String value = null;
 		while (entries.hasNext()) {
 			entry = entries.next();
-			key = entry.getKey();
-			value = entry.getValue();
+			key = (String) entry.getKey();
+			value = (String) entry.getValue();
 			System.out.printf("<%s, %s>\n", key, value);
 		}
 	}

@@ -66,11 +66,11 @@ public final class loginSuc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("\t<base href=\"");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("<base href=\"");
       out.print(basePath);
       out.write("\">\r\n");
-      out.write("\t<title>loginSuc</title>\r\n");
+      out.write("<title>loginSuc</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\t<h1>Login Success!</h1>\r\n");
@@ -79,6 +79,11 @@ public final class loginSuc_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\r\n");
       out.write("\t<a href=\"user/goAddUser.do\">ADD</a>\r\n");
+      out.write("\t<br>\r\n");
+      out.write("\t<video width=\"320\" height=\"240\" controls=\"controls\">\r\n");
+      out.write("\t\t<source src=\"../static/video/movie.mp4\" type=\"video/mp4\" />\r\n");
+      out.write("\t\t<source src=\"../static/video/movie.ogg\" type=\"video/ogg\" />\r\n");
+      out.write("\t</video>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
@@ -112,7 +117,7 @@ public final class loginSuc_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\r\n");
           out.write("\t\t");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("<br/>\r\n");
+          out.write("<br />\r\n");
           out.write("\t");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
